@@ -1,8 +1,5 @@
 node default {
-  include 'docker'
-  docker::image { 'ubuntu':
-    image_tag => 'trusty',
-  }
+  include role::master_server
 }
 
 node 'master.puppet.vm' {
