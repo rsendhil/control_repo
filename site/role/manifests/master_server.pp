@@ -1,4 +1,7 @@
 class role::master_server {
   include profile::base
-  include profile::agent_nodes
+  package { 'docker':
+    ensure => 'absent',
+  }
+#  include profile::agent_nodes
 }
