@@ -1,4 +1,4 @@
-class profile::base {
+class profile:base {
   user { 'root':
     ensure => present,
   }
