@@ -1,9 +1,12 @@
 node default {
+}
+
+node 'puppetserver.otjs-cloud-poc.com' {
   include role::master_server
 }
 
-node 'master.puppet.vm' {
-  include role::master_server
+node 'puppetclient.otjs-cloud-poc.com' {
+  include role::app_server
 }
 
 node /^web+$/ {
