@@ -1,3 +1,5 @@
 class profile::web {
-  include nginx
+  package { 'httpd' :
+  ensure => installed,
+  }
 }
